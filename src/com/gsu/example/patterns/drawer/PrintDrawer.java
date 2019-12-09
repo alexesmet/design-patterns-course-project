@@ -1,7 +1,7 @@
-package com.alexesmet.patterns.drawer;
+package com.gsu.example.patterns.drawer;
 
-import com.alexesmet.patterns.shape.Dimensions;
-import com.alexesmet.patterns.shape.Shape;
+import com.gsu.example.patterns.shape.Dimensions;
+import com.gsu.example.patterns.shape.Shape;
 
 import java.io.PrintStream;
 

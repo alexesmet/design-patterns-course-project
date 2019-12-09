@@ -1,4 +1,4 @@
-package com.alexesmet.patterns.drawer;
+package com.gsu.example.patterns.drawer;
 
 import java.io.PrintStream;
 
@@ -9,7 +9,7 @@ public class DrawerBuilder {
     private char borderChar = '#';
     private char fillChar = '%';
     private int indentSize = 0;
-    private int marginTopSize;
+    private int marginTopSize = 0;
 
     public DrawerBuilder() {  }
 

@@ -1,11 +1,11 @@
-package com.alexesmet.patterns.shape.factory;
+package com.gsu.example.patterns.shape.factory;
 
-import com.alexesmet.patterns.shape.implementation.Circle;
-import com.alexesmet.patterns.shape.implementation.Rectangle;
-import com.alexesmet.patterns.shape.implementation.Square;
-import com.alexesmet.patterns.shape.implementation.Triangle;
+import com.gsu.example.patterns.shape.implementation.Circle;
+import com.gsu.example.patterns.shape.implementation.Rectangle;
+import com.gsu.example.patterns.shape.implementation.Square;
+import com.gsu.example.patterns.shape.implementation.Triangle;
 
-public class BorderShapeFactory implements ShapeFactory {
+public class FilledShapeFactory implements ShapeFactory {
     @Override
     public Circle createCircle(int radius) {
         return new Circle(radius, true);

@@ -1,4 +1,4 @@
-package com.alexesmet.patterns.shape;
+package com.gsu.example.patterns.shape;
 
 public abstract class AbstractShape implements Shape {
 

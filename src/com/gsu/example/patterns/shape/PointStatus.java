@@ -1,4 +1,4 @@
-package com.alexesmet.patterns.shape;
+package com.gsu.example.patterns.shape;
 
 import java.util.Arrays;
 import java.util.Collections;

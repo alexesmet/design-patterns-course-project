@@ -1,4 +1,4 @@
-package com.alexesmet.patterns.shape.implementation;
+package com.gsu.example.patterns.shape.implementation;
 
 public class Square extends Rectangle {
 

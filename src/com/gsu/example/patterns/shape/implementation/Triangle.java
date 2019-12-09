@@ -1,8 +1,8 @@
-package com.alexesmet.patterns.shape.implementation;
+package com.gsu.example.patterns.shape.implementation;
 
-import com.alexesmet.patterns.shape.AbstractShape;
-import com.alexesmet.patterns.shape.Dimensions;
-import com.alexesmet.patterns.shape.PointStatus;
+import com.gsu.example.patterns.shape.AbstractShape;
+import com.gsu.example.patterns.shape.Dimensions;
+import com.gsu.example.patterns.shape.PointStatus;
 
 public class Triangle extends AbstractShape {
 

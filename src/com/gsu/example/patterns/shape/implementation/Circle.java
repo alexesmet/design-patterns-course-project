@@ -4,6 +4,8 @@ import com.gsu.example.patterns.shape.AbstractShape;
 import com.gsu.example.patterns.shape.Dimensions;
 import com.gsu.example.patterns.shape.PointStatus;
 
+import java.util.Objects;
+
 public class Circle extends AbstractShape {
     private int radius;
 
@@ -29,4 +31,16 @@ public class Circle extends AbstractShape {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Circle)) return false;
+        Circle circle = (Circle) o;
+        return radius == circle.radius;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(radius);
+    }
 }

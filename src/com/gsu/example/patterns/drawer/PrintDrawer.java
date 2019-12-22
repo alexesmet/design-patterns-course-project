@@ -4,6 +4,7 @@ import com.gsu.example.patterns.shape.Dimensions;
 import com.gsu.example.patterns.shape.Shape;
 
 import java.io.PrintStream;
+import java.util.Objects;
 
 public class PrintDrawer implements Drawer {
 
@@ -42,6 +43,19 @@ public class PrintDrawer implements Drawer {
             }
             System.out.println();
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PrintDrawer that = (PrintDrawer) o;
+        return emptyChar == that.emptyChar &&
+                borderChar == that.borderChar &&
+                fillChar == that.fillChar &&
+                indentSize == that.indentSize &&
+                marginTopSize == that.marginTopSize &&
+                Objects.equals(out, that.out);
     }
 
 

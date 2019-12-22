@@ -4,6 +4,8 @@ import com.gsu.example.patterns.shape.AbstractShape;
 import com.gsu.example.patterns.shape.Dimensions;
 import com.gsu.example.patterns.shape.PointStatus;
 
+import java.util.Objects;
+
 public class Rectangle extends AbstractShape {
 
     private int height;
@@ -29,5 +31,19 @@ public class Rectangle extends AbstractShape {
         } else {
             return PointStatus.INSIDE;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Rectangle)) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return height == rectangle.height &&
+                width == rectangle.width;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(height, width);
     }
 }

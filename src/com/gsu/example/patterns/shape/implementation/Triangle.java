@@ -4,6 +4,8 @@ import com.gsu.example.patterns.shape.AbstractShape;
 import com.gsu.example.patterns.shape.Dimensions;
 import com.gsu.example.patterns.shape.PointStatus;
 
+import java.util.Objects;
+
 public class Triangle extends AbstractShape {
 
     private int height;
@@ -28,5 +30,19 @@ public class Triangle extends AbstractShape {
         if (distanceToBorder > 0)  return PointStatus.OUTSIDE;
         if (distanceToBorder > -1) return PointStatus.BORDER;
         else return PointStatus.INSIDE;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Triangle)) return false;
+        Triangle triangle = (Triangle) o;
+        return height == triangle.height &&
+                width == triangle.width;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(height, width);
     }
 }
